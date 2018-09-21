@@ -1,0 +1,65 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {    
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: rem-calc(16);
+    color: #ffffff;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: rem-calc(1200);
+}
+
+main, header, section, aside, footer {    
+    display: block;
+    margin: 0;
+    padding: rem-calc(20);
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+main {
+    background: #000000;
+}
+
+.header {
+    background: #03a9f4;
+}
+
+.hero {
+    background: #d22b1f;
+}
+
+.flex-container {
+    @media screen and (min-width: 640px){
+        display: flex;
+    }    
+}
+
+.content {
+    flex: 1;
+    background: #129a22;
+}
+
+.sidebar {
+    flex: 0 1 300px;
+    border: 1px solid #000000;
+    background: #673ab7;
+}
+
+.footer {
+    border: 1px solid #000000;
+    background: #616161;
+}
+
+
+

@@ -1,0 +1,5 @@
+// Converts from pixel to rem
+// Assumes HTML font size of 100% and base font size of 16px
+@function rem-calc($px){
+    @return $px/16+rem;
+}
